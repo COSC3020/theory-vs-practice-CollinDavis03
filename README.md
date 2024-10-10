@@ -16,42 +16,43 @@ Add your answers to this markdown file.
 
 Reasoning for asymptotic analysis is misleading: 
 
-- The first reason that asymptotic analysis is misleading is that there are different machines in this world and they all run differently. Even if you do a test on one machine and you get the runtime from it, it will still factor out the other machines that are out there and we do not account for the analysis on those machines.
+- The first reason that asymptotic analysis is misleading is that there are different machines in this world, and they all run differently. Even if you do a test on one machine and you get the runtime from it, it will still factor out the runtime on other machines, and we do not account for the analysis on those machines. 
   
-- The second reason is that it will look at the complexity with input size growing. This is very useful. It will also leave out information about the time and complexity that we might need to understand.
+- The second reason is that alot of these focus on the growth rate of the algorithm and ignore the constant factors that you might run into. The reason I say that is cause _O_(log n) might have a larger constant value than compared to _O_(n) might have a faster runtime for smaller input sizes. 
 
-- The third reason is that it only looks at the impact that it makes on the input size of the complexity.  This could leave out factors that could contribute to the changes in the complexity of the code. While we are looking at the asymptotic complexity we tend to ignore the low order factors.
+- The third reason is that a lot of these complexities do not account for the memory that is being used. The reason being said is that there could be a lot of memory cache misses and not having enough memory within the system. Which will most likely slow down the time than they predicted it to be. 
 
-  Binary Search tree:
+  Binary Search Tree Time:
   
-  Balanced: 
-  k = constant
-  5 seconds for the 1,000 elements
-  k * log(1,000) = 5
-  k * 3 = 5
-  k = 5/3
-  plug that into 10,000
-  5/3 * log(10,000) = time 
-  5/3 * 4 = time
-  20/3 = time
-  Takes 20/3 or 6 2/3 seconds to do the binary search tree if we follow the orignial method.
+  -Balanced: 
+  -k = constant
+  -5 seconds for the 1,000 elements
+  -k * log(1,000) = 5
+  -k * 3 = 5
+  -k = 5/3
+  -plug that into 10,000
+  -5/3 * log(10,000) = time 
+  -5/3 * 4 = time
+  -20/3 = time
+  -Takes 20/3 or 6 2/3 seconds to do the binary search tree if we follow the orignial method.
   
-  Basic Math: 
-  n = amount
-  k = constant
-  k * 1,000 = 5
-  k = 5/1,000
-  (5/1000) * 10,0000 = time
-  50 seconds = time
+  -Complexity: 
+  -n = amount
+  -k = constant
+  -k * 1,000 = 5
+  -k = 5/1,000
+  -(5/1000) * 10,0000 = time
+  -50 seconds = time
+
+  Using _O_(log n) (Time complexity) we got 6.666 seconds for the runtime. With the complexity of math, it should have been 50 seconds. 
 
   Reasoning why it was not the times we got above:
 
-  - The first reason could be the machine we were using. The original time could have been from a machine that was stronger and faster than the second machine we tested it on. Which made the results worse than we thought they were going to be.
+  - The first reason could be the machine used during the test. They could have used a different machine for the second test that was completely different than the first one. If it does not have the same specs as the first one it could possibly run at different times. 
  
-  - The second reason is that maybe the person testing this was watching a movie while the test was going. Which could have been using the resources on the computer making the test run slower than we anticipated it to.
+  - The second reason is that there is a possibility that the test computer memory or RAM is old and does not have the memory capacity to withstand the amount of numbers that are being put out. This will cause the computer to slow down and have a lower runtime because it is limited on the memory it can use and has to complete it before it can move on to the next bit of info. 
  
-  - If they were using an older machine the memory could have been old. This would lead the test to not having enough memory to run all the elements that were put into the test causing it to slow down and increase the time that it took to complete the test. 
-
+  - The third reason is using the same machine for testing (1,000 elements) there is a chance that the tester had some extra source running while the test was running. This would cause the computer to put all of its resources into the program that it is being used because it is important and the test just run on the reserved resources that it has because it is not the priority application being used. 
 
 Sources: 
 After doing it the first time I spoke with Nolan and Lily about this to see what I was missing and what I could of over-thought with it. I forgot that I had to do the log stuff for the calculations. I did not explain the reasonings the best because I was thinking in a computer builder mindset and thought you would understand it. I also was on the right track with the complexity of misleading info but was not thinking deeper about the topics I wrote and did that. I also looked at egkallas repo to make sure I had the right calculations and was not messing up the times. 
