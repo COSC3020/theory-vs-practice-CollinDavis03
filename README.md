@@ -16,7 +16,7 @@ Add your answers to this markdown file.
 
 Reasoning for asymptotic analysis is misleading: 
 
-- The first reason that asymptotic analysis is misleading is that there are different machines in this world, and they all run differently. Even if you do a test on one machine and you get the runtime from it, it will still factor out the runtime on other machines, and we do not account for the analysis on those machines. 
+- The first reason that asymptotic analysis is misleading is that every machine has a different processor than other machines. The reason is that all processors have different clock speeds, cache sizes, and instruction set architecture. Which will affect how fast it can solve a complex matrix. One processor might have a higher cache size than the other. Which enables it to deal with more data at once than the other. 
   
 - The second reason is that alot of these focus on the growth rate of the algorithm and ignore the constant factors that you might run into. The reason I say that is cause _O_(log n) might have a larger constant value than compared to _O_(n) might have a faster runtime for smaller input sizes. 
 
