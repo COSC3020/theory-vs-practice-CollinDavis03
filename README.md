@@ -24,24 +24,26 @@ Reasoning for asymptotic analysis is misleading:
 
   Binary Search Tree Time:
   
- - Balanced: 
-  - k = constant
-  - 5 seconds for the 1,000 elements
-  - k * log(1,000) = 5
-  - k * 3 = 5
-  - k = 5/3
-  - plug that into 10,000
-  - 5/3 * log(10,000) = time 
-  - 5/3 * 4 = time
-  - 20/3 = time
-  - Takes 20/3 or 6 2/3 seconds to do the binary search tree if we follow the original method.
- - Complexity: 
-  - n = amount
-  - k = constant
-  - k * 1,000 = 5
-  - k = 5/1,000
-  - (5/1000) * 10,0000 = time
-  - 50 seconds = time
+ - Balanced:
+   
+    - k = constant
+    - 5 seconds for the 1,000 elements
+    - k * log(1,000) = 5
+    - k * 3 = 5
+    - k = 5/3
+    - plug that into 10,000
+    - 5/3 * log(10,000) = time 
+    - 5/3 * 4 = time
+    - 20/3 = time
+    - Takes 20/3 or 6 2/3 seconds to do the binary search tree if we follow the original method.
+ - Complexity:
+   
+    - n = amount
+    - k = constant
+    - k * 1,000 = 5
+    - k = 5/1,000
+    - (5/1000) * 10,0000 = time
+    - 50 seconds = time
 
   Using _O_(log n) (Time complexity) we got 6.666 seconds for the runtime. With the complexity of math, it should have been 50 seconds. 
 
