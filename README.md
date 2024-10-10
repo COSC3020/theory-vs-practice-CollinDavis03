@@ -35,7 +35,8 @@ Reasoning for asymptotic analysis is misleading:
   - 5/3 * 4 = time
   - 20/3 = time
   - Takes 20/3 or 6 2/3 seconds to do the binary search tree if we follow the original method.
-  
+
+
   - Complexity: 
   - n = amount
   - k = constant
