@@ -24,7 +24,7 @@ Reasoning for asymptotic analysis is misleading:
 
   Binary Search Tree Time:
   
-  - Balanced: 
+ - Balanced: 
   - k = constant
   - 5 seconds for the 1,000 elements
   - k * log(1,000) = 5
@@ -35,9 +35,7 @@ Reasoning for asymptotic analysis is misleading:
   - 5/3 * 4 = time
   - 20/3 = time
   - Takes 20/3 or 6 2/3 seconds to do the binary search tree if we follow the original method.
-
-
-  - Complexity: 
+ - Complexity: 
   - n = amount
   - k = constant
   - k * 1,000 = 5
